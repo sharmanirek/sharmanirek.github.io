@@ -2051,14 +2051,14 @@
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		-moz-appearance: none;
+		/* -moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		display: block;
 		float: left;
 		margin-right: -2em;
-		opacity: 0;
+		opacity: 0; */
 		width: 1em;
 		z-index: -1;
 	}
@@ -2231,6 +2231,11 @@
 
 		.image.round img {
 			border-radius: 100%;
+		}
+		.image.roundz img {
+			border-radius: 100%;
+			width:600px;
+			height:400px;
 		}
 
 		.image.left {
@@ -2917,7 +2922,7 @@
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/hunneboys.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;

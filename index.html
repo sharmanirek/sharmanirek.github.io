@@ -1,146 +1,103 @@
-<!DOCTYPE HTML>
-<!--
-	Projection by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Hunnewell Home</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nirek Sharma — Senior Research Scientist working on machine learning fairness at Upstart.">
+  <title>Nirek Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<!-- Sripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-	$(document).ready(function () {
-		// Add smooth scrolling to all links
-		$("a").on('click', function (event) {
-
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				// Prevent default anchor click behavior
-				event.preventDefault();
-
-				// Store hash
-				var hash = this.hash;
-
-				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 800, function () {
-
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-				});
-			} // End if
-		});
-	});
-</script>
 
 <body>
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="index.html" class="logo"><strong>Hunnewell.club</strong> made with Love </a>
-			<nav id="nav">
-				<a href="index.html">Home</a>
-				<a href="tacos.html">Tacos</a>
-				<a href="outfitters.html">Hunnewell Outfitters</a>
-				<a href="calendar.html">Calendar</a>
-				<a href="guest.html">Guest Column</a>
-				<a href="wdii.html">What Day Is It</a>
-				<a href="flash.html"> A Flash Game</a>
-				<a href="random.html"> Random Number Generator</a>
+  <nav>
+    <a href="index.html" class="nav-brand">Nirek Sharma</a>
+    <div class="nav-links">
+      <a href="journey.html">Journey</a>
+      <a href="offline.html">Offline</a>
+      <a href="mailto:sharmanirek@gmail.com">Contact</a>
+    </div>
+  </nav>
 
-			</nav>
-			<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-		</div>
-	</header>
+  <main>
+    <!-- Hero with photo carousel -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-slide active" style="background-image: url('img/bridge-surfers.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('img/cliff-beach.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('img/yosemite.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('img/mountain-peak.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('img/beach-sea-stacks.jpg')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Nirek Sharma</h1>
+        <p class="subtitle">ML Fairness @ Upstart</p>
+        <p class="tagline">I research how to make machine learning systems fair and equitable.
+        </p>
+        <div class="cta-row">
+          <a href="journey.html" class="btn-primary">My Journey</a>
+        </div>
+      </div>
+    </section>
 
-	<!-- Banner -->
-	<section id="banner" class="wrapper align-center">
-		<div class="inner">
-			<header>
-				<h1>Welcome to the Hive</h1>
-			</header>
+    <!-- Bio -->
+    <section class="section-about">
+      <div class="container">
+        <div class="bio">
+          <p>My work at Upstart makes use of my background in data science, systems engineering, and statistics, where I
+            focus on Machine Learning Fairness. I work to detect and mitigate disparate impacts of ML models across
+            protected groups.</p>
+          <p>Over the last handful of years, I've worked on developing and applying ML systems to solve problems that
+            help people. But as these models have become more and more capable, I've become more passionate about
+            addressing the unintended effects of ML models. </p>
+        </div>
+      </div>
+    </section>
 
-			<div class="flex ">
-				<div>
-					<span class="icon fa-question"></span>
-					<h3>What</h3>
-					<p>Only the most happening <br> apartment in Boston</p>
-				</div>
+    <!-- Recent Research -->
+    <section class="section-highlight">
+      <div class="container">
+        <span class="overline">Recent Research</span>
+        <h2>Algorithmic Debiasing via Post-Processing</h2>
+        <p>A novel technique for algorithmically debiasing general ML models — developed at Upstart and applied to core
+          underwriting systems. Published on arXiv, 2025.</p>
+        <a href="https://arxiv.org/abs/2504.16238" target="_blank" rel="noopener noreferrer" class="arrow-link">Read the
+          paper &rarr;</a>
+      </div>
+    </section>
 
-				<div>
-					<span class="icon fa-car"></span>
-					<h3>Where</h3>
-					<p>82 Hunnewell Ave Boston MA</p>
-				</div>
+    <!-- Skills -->
+    <section class="section-about">
+      <div class="container">
 
-				<div>
-					<span class="icon fa-clock-o"></span>
-					<h3>When</h3>
-					<p>Thursday at 7 PM ish</p>
-				</div>
-			</div>
+        <div class="subsec">
+          <span class="overline">Get in Touch</span>
+          <div class="contact-links">
+            <a href="mailto:sharmanirek@gmail.com" class="arrow-link">sharmanirek@gmail.com &rarr;</a>
+            <a href="https://www.linkedin.com/in/sharmanirek/" target="_blank" rel="noopener noreferrer"
+              class="arrow-link">LinkedIn &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-			<footer>
-				<a href="#three" class="button">What is this Nirek?</a>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nirek Sharma &middot; <a href="mailto:sharmanirek@gmail.com">sharmanirek@gmail.com</a></p>
+    </div>
+  </footer>
 
-			</footer>
-		</div>
-	</section>
-
-	<!-- Three -->
-	<section id="three" class="wrapper align-center">
-		<div class="inner">
-			<h2>
-				I made us a website...
-			</h2>
-
-			<div>
-				<article>
-					<div class="image roundz">
-						<img src="images/hunnebois.png" alt="Pic 01" />
-					</div>
-					<p>There's stuff on here about the things we do... <br>
-						 It's a work in progress, but it's safe to expect big things</p>
-						 <br>
-					<footer>
-						<a href="https://wikipedia.com" class="button">Learn More</a>
-					</footer>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="https://twitter.com/NirekSharma" class="icon fa-twitter" style="color:white;"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="https://facebook.com/sharmanirek" class="icon fa-facebook" style="color:white;"><span
-							class="label">Facebook</span></a></li>
-				<li><a href="https://instagram.com/nireksharma" class="icon fa-instagram" style="color:white;"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="https://github.com/sharmanirek" class="icon fa-github" style="color:white;"><span
-							class="label">Github</span></a></li>
-
-			</ul>
-		</div>
-	</footer>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

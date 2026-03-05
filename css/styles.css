@@ -643,6 +643,37 @@ nav.nav-transparent .nav-links a.active {
   white-space: nowrap;
 }
 
+.pub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pub-title {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.55;
+}
+
+.pub-title:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.pub-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
 .contact-links {
   display: flex;
   flex-direction: column;

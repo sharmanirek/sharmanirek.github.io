@@ -600,6 +600,27 @@ nav.nav-transparent .nav-links a.active {
 
 .bio p + p { margin-top: 1.25rem; }
 
+.bio-wrap {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.bio-wrap .bio { margin-bottom: 0; }
+
+.bio-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.highlight-divider {
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0 2rem;
+}
+
 .subsec {
   margin-bottom: 2.75rem;
 }
@@ -727,6 +748,9 @@ footer a:hover { color: var(--text); }
   .timeline-dot { left: -1.75rem; }
   .timeline-entry { padding-bottom: 3rem; }
   .timeline-img { max-width: 100%; }
+
+  .bio-wrap  { flex-direction: column; gap: 1.5rem; }
+  .bio-photo { width: 100%; max-width: 220px; height: auto; }
 
   .offline-hero { height: 50vh; }
   .offline-hero-text { bottom: 2rem; left: 1.25rem; }
